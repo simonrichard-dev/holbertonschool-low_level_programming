@@ -1,3 +1,6 @@
 0-positive_or_negative.c : code in order to print whether the number stored in the variable n is positive or negative.
 1-last_digit.c : print the last digit of the number stored in the variable n.
 2-print_alphabet.c : program that prints the alphabet in lowercase, followed by a new line.
+3-print_alphabets.c : a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+4-print_alphabt.c : a program that prints the alphabet in lowercase, followed by a new line (print all the letters except q and e).
+5-print_numbers.c : a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
