@@ -15,7 +15,7 @@ void print_rev(char *s)
 	{
 		length++;
 	}
-	for (letter = length; length >= 0; letter--) /*loop to print each char*/
+	for (letter = length - 1; letter >= 0; letter--) /*loop to print each char*/
 	{
 		_putchar(s[letter]);
 	}
