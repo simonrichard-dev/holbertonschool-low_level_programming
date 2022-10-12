@@ -4,7 +4,7 @@
  *rev_string - prints a string, in reverse.
  *@s : value of the string.
  *
- * Return: Always 0.
+ * Return: void
  */
 void rev_string(char *s)
 {
@@ -16,6 +16,7 @@ void rev_string(char *s)
 	{
 		init++;
 	}
+	init--;
 	while (rev < init) /*loop to reverse the string*/
 	{
 		tmp = s[init];
