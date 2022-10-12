@@ -28,7 +28,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		n = ((c / 2) + 1);
+		n = ((c + 1) / 2);
 
 		while (str[n] != '\0') /*loop to print odd string*/
 		{
