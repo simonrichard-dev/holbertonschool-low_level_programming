@@ -8,33 +8,25 @@
  */
 void puts_half(char *str)
 {
-	int c = 0;
-	int m;
+	int a = 0;
+	int b = 0;
 	int n;
 
-	while (str[c] != '\0') /*loop to count each character*/
+	while (str[a++] != '\0') /*loop to count each character*/
 	{
-		c++;
+		b++;
 	}
-	if (c % 2 == 0)
+	if (b % 2 == 0)
 	{
-		m = (c / 2);
-
-		while (str[m] != '\0') /*loop to print pair string*/
-		{
-			_putchar(str[m]);
-			m++;
-		}
+		n = b / 2;
 	}
 	else
 	{
-		n = ((c + 1) / 2);
-
-		while (str[n] != '\0') /*loop to print odd string*/
-		{
-			_putchar(str[n + 1]);
-			n++;
-		}
+		n = (b + 1) / 2;
+	}
+	for (a = n; a < b; a++)
+	{
+		_putchar(str[a]);
 	}
 	_putchar('\n');
 
