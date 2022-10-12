@@ -1,27 +1,41 @@
 #include "main.h"
 
 /**
- * main - 
+ * puts_half - print the second half of the string
+ * @str : unkwnow string
  *
- *
- * Return: 
+ * Return: half of a string, followed by a new line.
  */
 void puts_half(char *str)
 {
-	int letter;
-	int numbofcharac = 0;
+	int c = 0;
+	int m;
+	int n;
 
-	while (s[l] != '\0') /*loop to print each character*/
+	while (str[c] != '\0') /*loop to count each character*/
 	{
-		numbofcharac++;
-		s++;
+		c++;
 	}
-	while (numbofcharac > 0)
+	if (c % 2 == 0)
 	{
-		letter = *s;
-		_putchar(letter);
-		s--;
-		numbofcharac--;
+		m = (c / 2);
+
+		while (str[m] != '\0') /*loop to print pair string*/
+		{
+			_putchar(str[m]);
+			m++;
+		}
+	}
+	else
+	{
+		n = ((c / 2) + 1);
+
+		while (str[n] != '\0') /*loop to print odd string*/
+		{
+			_putchar(str[n + 1]);
+			n++;
+		}
 	}
 	_putchar('\n');
+
 }
