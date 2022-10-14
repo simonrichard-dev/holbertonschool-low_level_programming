@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memcpy - copies memory area
+ * *_memcpy - copy memory area
  * @dest : where to go
  * @src : where from
  * @n : size
@@ -14,7 +14,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	while (i < n)
 	{
-		src[i] = src[i];
+		dest[i] = src[i];
 		i++;
 	}
 	return (dest);
