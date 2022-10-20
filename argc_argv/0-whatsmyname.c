@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - programm tha prints its name
- * @argc: int variable
+ * main - programm that prints its name
+ * @argc: command line
  * @argv: char variable
  *
- * Return: int
+ * Return: O
  */
 
 int main(int argc, char *argv[])
