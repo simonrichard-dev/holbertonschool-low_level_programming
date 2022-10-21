@@ -11,9 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int a = atoi(argv[1]);
-	int b = atoi(argv[2]);
-	int r;
+	int a, b, r;
 
 	if (argc < 3)
 	{
@@ -22,6 +20,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
 		r = a * b;
 		printf("%d\n", r);
 	}
