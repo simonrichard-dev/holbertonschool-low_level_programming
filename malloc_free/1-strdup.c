@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stddef.h>
+#include <stdlib.h>
 
 /**
  * _strdup - returns a pointer
@@ -22,13 +22,13 @@ char *_strdup(char *str)
 		j++;
 	}
 
-	p = malloc(j + 1);
+	c = malloc(j + 1);
 
-	for (i = 0, i < j; i++)
+	for (i = 0; i < j; i++)
 	{
-		if (p = NULL)
+		if (c == NULL)
 			return (NULL);
-		p[i] = str[i];
+		c[i] = str[i];
 	}
-	return (p);
+	return (c);
 }
