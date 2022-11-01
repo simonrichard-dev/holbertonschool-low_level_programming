@@ -9,7 +9,7 @@
  * Return: a pointer
  */
 
-
+/*
 char *_strdup(char *str)
 {
 	char *p;
@@ -24,8 +24,8 @@ char *_strdup(char *str)
 	}
 
 	p = malloc(len + 1);
-
 	if (p == NULL)
+
 		return (NULL);
 
 	for (x = 0; x < len; x++)
@@ -33,7 +33,7 @@ char *_strdup(char *str)
 	return (str);
 }
 
-
+*/
 
 
 /**
@@ -41,7 +41,7 @@ char *_strdup(char *str)
  * @str: ptr
  * Return: res
  */
-/*
+
 char	*_strdup(char *str)
 {
 	char	*res;
@@ -59,7 +59,7 @@ char	*_strdup(char *str)
 	res[x] = '\0';
 	return (res);
 }
-*/
+
 
 /**
  * new_dog - function that create a new dog
