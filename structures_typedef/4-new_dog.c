@@ -9,7 +9,7 @@
  * Return: a pointer
  */
 
-/*
+
 char *_strdup(char *str)
 {
 	char *p;
@@ -32,7 +32,7 @@ char *_strdup(char *str)
 		p[x] = str[x];
 	return (str);
 }
-*/
+
 
 
 
@@ -41,7 +41,7 @@ char *_strdup(char *str)
  * @str: ptr
  * Return: res
  */
-
+/*
 char	*_strdup(char *str)
 {
 	char	*res;
@@ -59,7 +59,7 @@ char	*_strdup(char *str)
 	res[x] = '\0';
 	return (res);
 }
-
+*/
 
 /**
  * new_dog - function that create a new dog
