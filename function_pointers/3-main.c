@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
+	printf("num2 = %d\n", num2);
 	s = argv[2];
 
 	if (argv[2][1] != '\0' || get_op_func(s) == NULL)

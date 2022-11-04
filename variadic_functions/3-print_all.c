@@ -6,7 +6,6 @@
  * print_char - prints char
  * @vl: entry point
  */
-
 void print_char(va_list vl)
 {
 	printf("%c", va_arg(vl, int));
@@ -16,7 +15,6 @@ void print_char(va_list vl)
  * print_int - prints int
  * @vl: entry point
  */
-
 void print_int(va_list vl)
 {
 	printf("%d", va_arg(vl, int));
@@ -26,7 +24,6 @@ void print_int(va_list vl)
  * print_float - prints float
  * @vl: entry point
  */
-
 void print_float(va_list vl)
 {
 	printf("%f", va_arg(vl, double));
@@ -36,7 +33,6 @@ void print_float(va_list vl)
  * print_str - prints string
  * @vl: entry point
  */
-
 void print_str(va_list vl)
 {
 	char *c;
@@ -52,21 +48,19 @@ void print_str(va_list vl)
  * print_all - prints anything
  * @format: any argument
  */
-
 void print_all(const char * const format, ...)
 {
-	struct_t f_print[] = {
+	print_t	f_print[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
 		{"s", print_str},
-		{NULL, NULL}
+		{NULL, NULL},
 	};
-
-	int i = 0;
-	int j = 0;
-	va_list args;
-	char *d = "";
+	int	i = 0;
+	int	j = 0;
+	va_list	args;
+	char	*d = "";
 
 	va_start(args, format);
 	while (format != NULL && format[i] != '\0')
