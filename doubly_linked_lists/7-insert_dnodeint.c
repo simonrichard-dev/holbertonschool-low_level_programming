@@ -15,9 +15,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	dlistint_t *new_node;
 	unsigned int i = 0;
 
-	if ((*h) == NULL) /*check the pointer to list*/
-		return (NULL);
-
 	new_node = malloc(sizeof(dlistint_t)); /*allocate & check if node is ok*/
 	if (new_node == NULL)
 	{
@@ -32,10 +29,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	while (i != idx - 1) /*go to the index*/
 	{
+		if (tmp == NULL) /*check tmp*/
+			return (NULL);
 		i++;
 		tmp = tmp->next;
 	}
-	if (tmp != NULL)
+	if (tmp != NULL) /*add pointers to new_node & others*/
 	{
 		new_node->prev = tmp;
 		new_node->next = tmp->next;
@@ -43,5 +42,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			(tmp->next)->prev = new_node;
 		tmp->next = new_node;
 	}
-	return (new_node);
+	return (new_node); /*return adress*/
 }
