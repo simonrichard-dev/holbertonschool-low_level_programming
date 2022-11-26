@@ -21,13 +21,13 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 
 	new_array = malloc(sizeof(hash_node_t *) * size); /*create an array*/
-	if (array == NULL)
+	if (new_array == NULL)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
 		new_array[i] = NULL;
 
-	new_table->new_array = new_array;
+	new_table->array = new_array;
 	new_table->size = size;
 
 	return (new_table);
